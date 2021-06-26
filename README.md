@@ -51,6 +51,19 @@ Se procedió exactamente igual que en #2 , solamente que excluimos la variable S
 ![image](https://user-images.githubusercontent.com/36776334/123525639-9f46d000-d6a8-11eb-8420-932cbb83b1ba.png)
 ![image](https://user-images.githubusercontent.com/36776334/123525643-a372ed80-d6a8-11eb-9ba6-3966f19bd282.png)
 
+### Ejercicio 3: Reducción de dimensionalidad
+
+Se realiza un análisis de Componentes Principales para lo cual se toman solamente las variables numéricas de la matriz **scaled_mice** del ejercicio anterior. Se excluye la columna PostCode, que en realidad es categórica. De esta manera nos quedan 12 columnas, y el PCA se hace con ese número de componentes.
+
+- Matriz de entrada (solo  variables numéricas) = scaled_mice_numeric
+- Matriz de salida PCA = proyected_features
+- Graficamos las componentes y tomamos las 3 primeras que explican el 65% de la varianza.
+
+![image](https://user-images.githubusercontent.com/36776334/123525741-4fb4d400-d6a9-11eb-862d-696d5f778ec5.png)
+
+### Ejercicio 4: Composición final del resultado
+
+Se compone un nuevo dataframe con las variables categóricas codificadas, las variables numéricas escaladas y las 3 primeras componentes del PCA. El dataframe resultante se llama **processed_melb_df**
 
 
 
