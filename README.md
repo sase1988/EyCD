@@ -8,10 +8,10 @@
 Partimos de la fuente de datos del Entregable 1 que está en este link del repositorio, donde hicimos una limpieza previa de la base de datos (eliminamos outliers, realizamos algunas imputaciones simples y excluimos ciertas columnas):
 'https://github.com/sase1988/EyCD/raw/main/melb_df_clean.csv'
 
-### Encoding
+### Ejercicio 1: Encoding
 Utilizamos _DictVetorizer_ para codificar las variables categóricas, resultando una matriz llamada **feature_matrix** de 13531 filas por 379 columnas.
 
-### Imputación de las variables YearBuilt y BuildingArea
+### Ejercicio 2: Imputación de las variables YearBuilt y BuildingArea
 
 #### Procedimiento de imputación 1 (el que se ofrecia como ejemplo en la Notebook):
 
@@ -41,6 +41,15 @@ Se re-escalan las variables YearBuilt y BuildingArea su rango original para graf
 
 ![image](https://user-images.githubusercontent.com/36776334/123525142-124e4780-d6a5-11eb-889e-43042a3d62ab.png)
 ![image](https://user-images.githubusercontent.com/36776334/123525148-1712fb80-d6a5-11eb-934e-c20873f99b82.png)
+
+Los gráficos muestran que al incluir más variables en la imputación, la misma mejora y se acerca a algo más realista. En este caso, el hecho de sumarle información de entrada al KNN permitió mejorar el resultado. No obstante, puede ser que tengamos exceso de información, por lo que probamos sacar algunas columnas en el procedimiento 3.
+
+#### Procedimiento de imputación 3:
+
+Se procedió exactamente igual que en #2 , solamente que excluimos la variable Suburb, quedándonos una matriz de solo 71 columnas. Probamos las imputaciones, y el resultado parece ser tan bueno como el anterior:
+
+![image](https://user-images.githubusercontent.com/36776334/123525639-9f46d000-d6a8-11eb-8420-932cbb83b1ba.png)
+![image](https://user-images.githubusercontent.com/36776334/123525643-a372ed80-d6a8-11eb-9ba6-3966f19bd282.png)
 
 
 
