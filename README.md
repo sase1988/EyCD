@@ -2,7 +2,7 @@
 
 ------
 
-## Documentación de las operaciones realizadas
+## Documentación de las operaciones realizadas (Entregable 2)
 
 ### Fuente de datos
 Partimos de la fuente de datos del Entregable 1 que está en este link del repositorio, donde hicimos una limpieza previa de la base de datos (eliminamos outliers, realizamos algunas imputaciones simples y excluimos ciertas columnas):
